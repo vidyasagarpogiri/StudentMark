@@ -1,0 +1,15 @@
+<%= form_for @student do |s|%>
+
+name:<%= s.text_field :name %><br>
+branch:<%= s.text_field :branch %><br>
+year:<%= s.text_field :year %><br>
+percentage:<%= s.text_field :percentage %><br>
+
+<%=s.submit 'Save' %>
+
+<% end %>
+
+
+
+
+

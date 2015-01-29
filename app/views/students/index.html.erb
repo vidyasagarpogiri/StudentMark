@@ -1,0 +1,25 @@
+Hello click here to add new student <br>
+<%= link_to 'new student', new_student_path %>
+<hr>
+
+<table border=1>
+<tr>
+<th>name</th> 
+<th>branch</th>
+<th>year</th>
+<th>percentage</th>
+<th>CRUD </th>
+</tr>
+<% @students.each do |student| %>
+<tr>
+<td><%= student.name %> </td>
+<td><%= student.branch %></td>
+<td><%= student.year %></td>
+<td><%= student.percentage %></td>
+<td><%= link_to "Show",student_path(student.id) %>
+<%= link_to "Edit",edit_student_path(student.id) %>
+ <%= link_to "Delete",student_path(student.id), method: :delete, data: {confirm: "Are You sure?"} %> </td>
+</tr>
+<% end %>
+</table>
+

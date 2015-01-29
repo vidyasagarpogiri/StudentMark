@@ -1,0 +1,12 @@
+Student Show
+
+
+
+name:<%=@student.name %><br>
+branch:<%= @student.branch %><br>
+year:<%= @student.year %><br>
+percentage:<%= @student.percentage %><br>
+
+
+
+
